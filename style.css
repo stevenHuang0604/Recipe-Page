@@ -3,10 +3,121 @@
   padding: 0;
 }
 
-.attribution {
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-family: 'outfit';
+  color: hsl(24, 5%, 18%);
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 50vw;
+  margin: 5rem auto;
+  border-radius: 1rem;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail:not(:last-child):after {
+  content: '';
+  border: 1px solid hsl(30, 18%, 87%);
+  align-self: stretch;
+}
+
+.img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-family: 'young serif';
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.2rem;
+}
+
+.callout {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+h3 {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+li {
+  list-style-position: inside;
+  margin-left: 0.5rem;
+}
+
+ul li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+ol li span {
+  color: hsl(30, 10%, 34%);
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'young serif';
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+th,
+td {
+  padding: 1rem 2rem;
+}
+
+th {
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+  text-align: left;
+}
+
+tr {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
